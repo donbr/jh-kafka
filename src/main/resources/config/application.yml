@@ -54,6 +54,14 @@ spring:
             enabled: false
     thymeleaf:
         mode: HTML
+    cloud:
+      stream:
+        bindings:
+            messageChannel:
+                destination: greetings
+                content-type: application/json
+            subscribableChannel:
+                destination: greetings
 
 server:
     servlet:
