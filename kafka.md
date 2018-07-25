@@ -5,7 +5,7 @@ Kafka is a popular publish-subscribe messaging system. JHipster has an optional 
 
 * Configure Spring Cloud Stream with JHipster.
 * Add the necessary configuration in the application-*.yml files to have a sample topic-jhipster topic, and to have an healthcheck monitor for Kafka (which will be available in the health administration screen).
-* Generate a Docker Compose configuration file, with the sample topic-jhipster topic, so Kafka is usable by simply typing docker-compose -f src/main/docker/kafka.yml up -d.
+* Generate a Docker Compose configuration file, with the sample topic-jhipster topic, so Kafka is usable by simply typing `docker-compose -f src/main/docker/kafka.yml up -d`.
 * Provide support for Kafka in a microservice environment, when using Docker. The Docker Compose sub-generator will generate a specific Kafka configuration, if one microservice or one gateway uses Kafka. All microservices and gateways will then use that Kafka broker for all their messages. The broker is common for all applications, as it is typically used as a message broker between applications.
 
 ## Tutorial on using Kafka with Spring Cloud Stream in a JHipster application
